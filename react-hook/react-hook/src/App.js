@@ -1,4 +1,6 @@
-const ThemeContext = React.createContext("light");
+import Toolbar from "./components/Toolbar";
+import ThemeContext from "./hooks/ThemeContext";
+
 
 function App() {
   return (
@@ -7,8 +9,5 @@ function App() {
     </ThemeContext.Provider>
   );
 }
-function Toolbar() {
-  const theme = React.useContext(ThemeContext);
-  return <p>Theme hiện tại: {theme}</p>;
-}
+
 export default App;
