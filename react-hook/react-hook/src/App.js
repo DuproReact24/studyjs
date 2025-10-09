@@ -1,12 +1,11 @@
 import Toolbar from "./components/Toolbar";
+import Parent from "./hooks/studyUseCallback";
 import ThemeContext from "./hooks/ThemeContext";
 
 
 function App() {
   return (
-    <ThemeContext.Provider value="dark">
-      <Toolbar />
-    </ThemeContext.Provider>
+   <Parent></Parent>
   );
 }
 
